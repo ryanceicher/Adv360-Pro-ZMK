@@ -1,9 +1,14 @@
+macro_email: macro_email{
+compatible = "zmk,behavior-macro";
+label = "macro_email";
+#binding-cells = <0>;
+bindings = <&kp R>, <&kp Y>, <&kp A>, <&kp N>, <&kp PERIOD>, <&kp E>, <&kp I>, <&kp C>, <&kp H>, <&kp E>, <&kp R>, <&kp AT_SIGN>, <&kp B>, <&kp D>, <&kp PERIOD>, <&kp C>, <&kp O>, <&kp M>;
+};
 macro_alttab: macro_alttab{
 compatible = "zmk,behavior-macro";
 label = "macro_alttab";
 #binding-cells = <0>;
-/* bindings = <&macro_press &kp LALT>, <&macro_tap &kp TAB>, <&macro_pause_for_release>, <&macro_release &kp LALT>; */
-bindings = <&macro_press &kp LALT>, <&macro_tap &kp TAB>, <&macro_pause_for_release>, <&macro_release &kp LALT>;
+bindings = <&macro_press &kp LALT>, <&macro_tap &kp TAB>, <&macro_release &kp LALT>;
 };
 macro_vim_esc_w: macro_vim_esc_w{
 compatible = "zmk,behavior-macro";
